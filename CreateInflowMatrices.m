@@ -37,9 +37,10 @@ for ii = 1:1:countSinStates
     end
     
 end
-
-invLc = inv(Lcos .* GamaCos);
-invLs = inv(Lsin .* GamaSin);
+LcValue = Lcos .* GamaCos;
+LsValue = Lsin .* GamaSin;
+invLc = inv(LcValue);
+invLs = inv(LsValue);
 
 % for ii = 1:1:length(c)
 %     disp(c{ii});

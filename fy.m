@@ -1,22 +1,4 @@
 
-
-?çeri?e atla
-Gmail ürününü ekran okuyucularla birlikte kullanma
-inflow 
-
-28 ileti dizisinden 1.
-pehehehe
-Gelen Kutusu
-x
-
-ali karakaya
-Ekler
-13 Haz 2019 16:25 (2 gün önce)
-Al?c?: ben
-
-
-Ek alan?
-
 function [Hub_Forces,Hub_Moments,ct_over_solid,inflow_rec,dL_vec,dD_vec,alpha_ang_ave,beta_all,psi,y_out,inf_out] = fcn(U_i,Ang_i,dt,omega_in,theta0,A1,B1,psi_prev,y_data_prev,inflow_data_prev)
 %%% Define number of discrete Azimuth data
 n = 1;
