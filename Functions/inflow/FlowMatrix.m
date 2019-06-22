@@ -9,8 +9,11 @@ LambdaInduced = meanInflow;
 LambdaTotal = LambdaFree + LambdaInduced;
 
 VTotal = sqrt((AdvanceRatioRotor * AdvanceRatioRotor) + (LambdaTotal * LambdaTotal) );
-Vmean = ((AdvanceRatioRotor * AdvanceRatioRotor) +  ( LambdaTotal + LambdaInduced) * LambdaTotal) / VTotal;
-
+if(abs(VTotal) < 0.001)
+    Vmean = 0.0;
+else
+    Vmean = ((AdvanceRatioRotor * AdvanceRatioRotor) +  ( LambdaTotal + LambdaInduced) * LambdaTotal) / VTotal;
+end
 % Place into matricis
 cosStateNumber = length(indexCosStates);
 sinStateNumber = length(indexSinStates);
